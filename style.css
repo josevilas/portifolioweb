@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+scroll-behavior: smooth;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:target{
+scroll-margin-top: 8em;
+
+}
+
+
+
+
 header{
     background-color: black;
     height: 15vh; /* 10% da altura do dispositivo*/
@@ -93,4 +106,61 @@ footer{
 
 span{
     font-weight: bold;
+}
+
+form, #form-title{
+    width:450px ;
+    margin: 0 auto;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em; 
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+} 
+
+.form-group input,
+.form-group textarea {
+    padding: 0.6em;
+    color: #777;
+    font-size: 0.8em;
+}
+
+input[type=submit]{
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    border:2px solid transparent;
+    transition: 0.4s;
+}
+
+input[type=submit]:hover{
+    color: #616161;
+    border-color: #efefef;
+    background-color: transparent;
+}
+
+input[type=reset]{
+    background-color: #ff3913;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    border:2px solid transparent;
+    transition: 0.4s;
+}
+input[type=reset]:hover{
+    color: #616161;
+    border-color: #ff3913;
+    background-color: transparent;
 }
